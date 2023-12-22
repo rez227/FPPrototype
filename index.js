@@ -16,8 +16,8 @@ app.use(express.static(__dirname + '/public'));
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'appuser',
-    password: 'outfit',
-    database: 'myOutfits'
+    password: 'qwerty',
+    database: 'finalProject'
 });
 // Connect to the database
 db.connect((err) => {
@@ -41,7 +41,7 @@ app.set('view engine', 'ejs');
 app.engine('html', ejs.renderFile);
 
 // Define our data
-var shopData = { shopName: "OUTFITTERS" }
+var shopData = { shopName: "PROTOTYPE" }
 
 // Requires the main.js file inside the routes folder passing in the Express app and data as arguments.  All the routes will go in this file
 require("./routes/main")(app, shopData);
