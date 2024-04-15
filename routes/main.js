@@ -1,4 +1,5 @@
 //will work from this prototype to make my main
+//random
 module.exports = function (app, shopData) {
 
     app.get('/', function (req, res) {
